@@ -22,14 +22,14 @@
 }
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   margin: auto;
   background: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-back-mob.jpg);
+    url(../images/hero-back.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,9 +44,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-back-mob-2x.jpg);
+      url(../images/hero-back-2x.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -63,7 +63,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -94,5 +94,5 @@
 }
 
 .hero-container {
-  width: 696px;
+  max-width: 696px;
 }

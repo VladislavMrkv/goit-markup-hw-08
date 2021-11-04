@@ -80,7 +80,7 @@
   align-items: center;
 }
 .header_menu {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   display: flex;
@@ -124,11 +124,6 @@
   }
 }
 
-.js-menu-container {
-  width: 100%;
-  height: 100%;
-}
-
 .js-open-menu {
   @media screen and (min-width: 768px) {
     display: none;
@@ -167,18 +162,28 @@
   // height: 16px;
 }
 
-.mob-menu {
-  width: 100%;
-  height: 100%;
+.js-menu-container {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
 
   top: 0;
+  left: 0;
 
   background-color: var(--primary-title-color);
 
   padding: 21px 25px 48px 40px;
   display: flex;
   justify-content: space-between;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container {
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .mob-menu-content {

@@ -258,6 +258,7 @@ body {
   width: 100%;
   height: 100vh;
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: var(--primary-title-color);
@@ -1281,6 +1282,7 @@ body {
 .hero_portfolio_second_items {
   background: var(--primary-title-color);
   box-sizing: border-box;
+  border-bottom: 1px solid var(--third-bg-color);
   margin-bottom: 30px;
   margin-right: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1298,6 +1300,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero_portfolio_second_items {
+    max-width: 450px;
+  }
+}
+
 .portfolio-imgs {
   width: 370px;
   height: 294px;
@@ -1306,6 +1314,12 @@ body {
 @media screen and (max-width: 768px) {
   .portfolio-imgs {
     width: 354px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-imgs {
+    width: 450px;
   }
 }
 
@@ -1331,14 +1345,28 @@ body {
   margin-bottom: 56px;
 }
 
+@media screen and (max-width: 480px) {
+  .hero_portfolio_menu {
+    flex-wrap: wrap;
+  }
+}
+
 .hero_portfolio_first_items:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .hero_portfolio_first_items {
+    margin-bottom: 15px;
+  }
+  .hero_portfolio_first_items:nth-child(4), .hero_portfolio_first_items:nth-child(5) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-card-text {
   border-left: 1px solid var(--third-bg-color);
   border-right: 1px solid var(--third-bg-color);
-  border-bottom: 1px solid var(--third-bg-color);
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1362,6 +1390,8 @@ body {
 }
 
 .card-focus {
+  width: 100%;
+  height: 100%;
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1384,6 +1414,7 @@ body {
 }
 
 .portfolio-card-hover-text {
+  height: 100%;
   font-size: 18px;
   line-height: calc(28 / 18);
   padding-left: 24px;
@@ -1395,7 +1426,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(101%);
+  transform: translateY(150%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */

@@ -212,8 +212,8 @@
                 <h2 class="our_team_title">Наша команда</h2>
                 <ul class="our_team_list list">
                     <li class="our_team_item card_bg">
-                        <img srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x" src="./images/img-4.jpg"
-                            alt="Игорь Демьяненко" width="270" height="260" />
+                        <img class="our-team-imgs" srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
+                            src="./images/img-4.jpg" alt="Игорь Демьяненко" />
                         <div class="our-team-card-text">
                             <h3 class="our_team_names">Игорь Демьяненко</h3>
                             <p lang="en" class="our_team_text">Product Designer</p>
@@ -250,8 +250,8 @@
                         </div>
                     </li>
                     <li class="our_team_item card_bg">
-                        <img srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x" src="./images/img-5.jpg"
-                            alt="Ольга Репина" width="270" height="260" />
+                        <img class="our-team-imgs" srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x"
+                            src="./images/img-5.jpg" alt="Ольга Репина" />
                         <div class="our-team-card-text">
                             <h3 class="our_team_names">Ольга Репина</h3>
                             <p lang="en" class="our_team_text">Frontend Developer</p>
@@ -288,8 +288,8 @@
                         </div>
                     </li>
                     <li class="our_team_item card_bg">
-                        <img srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x" src="./images/img-6.jpg"
-                            alt="Николай Тарасов" width="270" height="260" />
+                        <img class="our-team-imgs" srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x"
+                            src="./images/img-6.jpg" alt="Николай Тарасов" />
                         <div class="our-team-card-text">
                             <h3 class="our_team_names">Николай Тарасов</h3>
                             <p lang="en" class="our_team_text">Marketing</p>
@@ -326,8 +326,8 @@
                         </div>
                     </li>
                     <li class="our_team_item card_bg">
-                        <img srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x" src="./images/img-7.jpg"
-                            alt="Михаил Ермаков" width="270" height="260" />
+                        <img class="our-team-imgs" srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x"
+                            src="./images/img-7.jpg" alt="Михаил Ермаков" />
                         <div class="our-team-card-text">
                             <h3 class="our_team_names">Михаил Ермаков</h3>
                             <p lang="en" class="our_team_text">UI Designer</p>
@@ -419,67 +419,71 @@
 
     <footer class="footer">
         <div class="footer-container container">
-            <div class="left-footer-div">
-                <a href="#" lang="en" class="footer_logo link">Web<span class="footer_logo_word">Studio</span></a>
-                <address class="footer_adress">
-                    <ul class="footer_list list">
-                        <li class="footer_item">
-                            <a href="#" class="footer_link_address link">г. Киев, пр-т Леси Украинки, 26</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="mailto:info@devstudio.com" class="footer_link link">info@example.com</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="tel:+380961111111" class="footer_link link">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="right-footer-div">
-                <p class="footer_word link">присоединяйтесь</p>
-                <ul class="footer_soc social_list list">
-                    <li class="footer_social_item">
-                        <a href="" class="footer_social_link link">
-                            <svg class="footer_social_icon">
-                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_social_item">
-                        <a href="" class="footer_social_link link">
-                            <svg class="footer_social_icon">
-                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_social_item">
-                        <a href="" class="footer_social_link link">
-                            <svg class="footer_social_icon">
-                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_social_item">
-                        <a href="" class="footer_social_link link">
-                            <svg class="footer_social_icon">
-                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="email-footer-div">
-                <label for="user-footer-email" class="footer-input-word">Подпишитесь на рассылку</label>
-                <div class="div-email-i-b">
-                    <input type="text" name="user-footer-email" id="user-footer-email" class="footer-input"
-                        placeholder="E-mail">
-                    <button type="submit" class="footer-btn">Подписаться
-                        <svg class="footer-btn-icon">
-                            <use href="./images/icons.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
+            <div class="footer-inner">
+                <div class="footer-mob-tab-div">
+                    <div class="left-footer-div">
+                        <a href="#" lang="en" class="footer_logo link">Web<span
+                                class="footer_logo_word">Studio</span></a>
+                        <address class="footer_adress">
+                            <ul class="footer_list list">
+                                <li class="footer_item">
+                                    <a href="#" class="footer_link_address link">г. Киев, пр-т Леси Украинки, 26</a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="mailto:info@devstudio.com" class="footer_link link">info@example.com</a>
+                                </li>
+                                <li class="footer_item">
+                                    <a href="tel:+380961111111" class="footer_link link">+38 099 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="right-footer-div">
+                        <p class="footer_word link">присоединяйтесь</p>
+                        <ul class="footer_soc social_list list">
+                            <li class="footer_social_item">
+                                <a href="" class="footer_social_link link">
+                                    <svg class="footer_social_icon">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer_social_item">
+                                <a href="" class="footer_social_link link">
+                                    <svg class="footer_social_icon">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer_social_item">
+                                <a href="" class="footer_social_link link">
+                                    <svg class="footer_social_icon">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer_social_item">
+                                <a href="" class="footer_social_link link">
+                                    <svg class="footer_social_icon">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
+                <div class="email-footer-div">
+                    <label for="user-footer-email" class="footer-input-word">Подпишитесь на рассылку</label>
+                    <div class="div-email-i-b">
+                        <input type="text" name="user-footer-email" id="user-footer-email" class="footer-input"
+                            placeholder="E-mail">
+                        <button type="submit" class="footer-btn">Подписаться
+                            <svg class="footer-btn-icon">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

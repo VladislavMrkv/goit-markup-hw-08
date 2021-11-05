@@ -103,6 +103,10 @@
 
   margin-bottom: 56px;
 
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
   }
@@ -135,7 +139,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
     gap: 30px;
   }
 }

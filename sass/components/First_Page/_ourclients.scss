@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     justify-content: center;
     gap: 30px;
   }
@@ -16,7 +16,7 @@
     fill: var(--accent-color);
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     &:not(:last-child) {
       margin-right: 0px;
     }
@@ -41,12 +41,12 @@
     fill: var(--accent-color);
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     width: 225px;
   }
 
   @media screen and (max-width: 480px) {
-    width: 210px;
+    max-width: 210px;
   }
 }
 

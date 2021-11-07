@@ -69,14 +69,16 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 270px 270px;
     gap: 30px;
+    justify-content: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 

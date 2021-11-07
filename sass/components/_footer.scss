@@ -113,6 +113,7 @@
 
 .right-footer-div {
   margin-left: 70px;
+  align-items: baseline;
 
   @media screen and (max-width: 1200px) {
     margin-left: 0px;
@@ -121,6 +122,8 @@
 
 .footer-mob-tab-div {
   display: flex;
+
+  align-items: baseline;
 
   @media screen and (max-width: 1200px) {
     justify-content: space-around;
@@ -151,6 +154,7 @@
 
 .email-footer-div {
   flex: 0 1 570px;
+  align-items: baseline;
 
   @media screen and (max-width: 1200px) {
     display: flex;

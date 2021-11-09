@@ -1,11 +1,11 @@
 .peculiarities_list {
   display: flex;
   justify-content: center;
+  gap: 30px;
 
   @media screen and (max-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
 
   @media screen and (max-width: 768px) {
